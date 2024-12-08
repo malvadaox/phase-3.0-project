@@ -18,11 +18,9 @@ ______________________________________________________________________
    - [Modeling](#modeling)
      - [Hyperparameter Tuning](#hyperparameter-tuning)
    - [Model Evaluation](#model-evaluation)
-3. [Project Structure](#project-structure)
-4. [How to Run the Project](#how-to-run-the-project)
-5. [Results and Insights](#results-and-insights)
-6. [Future Work and Recommendations](#future-work-and-recommendations)
-7. [Conclusion](#conclusion)
+3. [Results and Insights](#results-and-insights)
+4. [Recommendations](#Recommendations)
+5. [Conclusion](#Conclusion)
 
 
 
