@@ -1,26 +1,6 @@
 # SYRIATEL CUSTOMER CHURN PROJECT
 ______________________________________________________________________
 
-## Table of Contents
-
-1. [Project Overview](#Project-Overview)
-   - [Objective](#Objective)
-   - [Business Problem](#Business-Problem)
-   - [Business understanding ](#Business-Understanding)
-   - [Tools and Libraries Used](#tools-and-libraries-used)
-2. [Steps and Methodology](#steps-and-methodology)
-   - [Data Preprocessing](#data-preprocessing)
-     - [Data Cleaning](#data-cleaning)
-     - [Feature Engineering](#feature-engineering)
-     - [Encoding Categorical Variables](#encoding-categorical-variables)
-     - [Scaling](#scaling)
-   - [Handling Class Imbalance](#handling-class-imbalance)
-   - [Modeling](#modeling)
-     - [Hyperparameter Tuning](#hyperparameter-tuning)
-   - [Model Evaluation](#model-evaluation)
-3. [Results and Insights](#results-and-insights)
-4. [Recommendations](#Recommendations)
-5. [Conclusion](#Conclusion)
 
 
 
