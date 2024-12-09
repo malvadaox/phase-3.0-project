@@ -57,7 +57,7 @@ The dataset was preprocessed to handle any missing values, remove unnecessary co
 
 #### Encoding Categorical Variables:
 - **Label Encoding** was used for columns like `state`, `international plan`, and `voice mail plan`.
-- **One-Hot Encoding** was used where applicable.
+
 
 #### Scaling:
 - The dataset was scaled using `StandardScaler` to ensure that numerical features are on a similar scale for model training.
