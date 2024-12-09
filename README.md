@@ -30,7 +30,7 @@
 
 
 
-## Business Problem (continued)
+## Business Problem 
 SyriaTel, like most telecommunications companies, faces challenges in maintaining customer loyalty. Customers can choose from various providers, and churn (i.e., the rate at which customers leave) represents a significant source of revenue loss. High churn rates also lead to increased customer acquisition costs and decreased market share. Understanding which customers are likely to leave can help SyriaTel take targeted actions to improve retention, reduce churn, and ultimately boost profitability.
 
 ## Business Understanding
