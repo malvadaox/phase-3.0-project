@@ -23,15 +23,48 @@ By accurately predicting customer churn, SyriaTel can:
 3.Improve customer experience: By understanding the drivers of churn, SyriaTel can enhance its offerings, address pain points, and boost overall satisfaction, leading to higher customer loyalty.
 4.Reduce operational costs: Reducing churn can lower the costs associated with acquiring new customers to replace lost ones, thus improving profitability.
 
-### 1. **Data Preprocessing**
+## DATA SOURCE
+https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset
 
-The dataset was preprocessed to handle any missing values, remove unnecessary columns, and encode categorical variables.
 
-#### Data Cleaning:
-- Removed irrelevant columns (e.g., `phone number`).
-- Handled missing data by filling with the median of respective columns.
+## Data Exploration and Analysis (EDA)
 
-#### Feature Engineering:
+### Importing Necessary Libraries
+- Python libraries such as `pandas`, `numpy`, `matplotlib`, `seaborn`, and `sklearn` were used for data manipulation, visualization, and modeling.
+
+### Load the Dataset
+- Data from Syriatel was imported for analysis.
+
+### Analysis of the Data
+- Summary statistics and distribution checks were conducted to understand data quality.
+---
+
+## Data cleaning
+-Removed irrelevant columns(e.g, phone number)
+
+### Identifying Missing Values and Duplicates
+- The dataset was checked for missing values and duplicates, findings were it had none.
+
+### Handling Missing Values and Duplicates
+- No measure was taken asthere no missing values or duplicates.
+
+---
+
+## Data Preprocessing
+If the dataset was pre-processed to handle any missing values, remove unecessary columns, and encode categorical data
+
+### Dropping Irrelevant Columns
+- Columns with no predictive value were removed.
+
+### Encoding Categorical Variables
+- Categorical features were transformed into numerical formats using one-hot encoding.
+
+### Dependent (y) and Independent Variables (X)
+- Target (churn) and predictors were clearly defined.
+
+---
+
+## Feature Engineering:
 - Created a new feature `total engagement`, which sums up the total usage of day, evening, and night minutes.
 - Created a binary feature `high_service_calls`, indicating if a customer had more than 3 customer service calls.
 
@@ -42,12 +75,12 @@ The dataset was preprocessed to handle any missing values, remove unnecessary co
 #### Scaling:
 - The dataset was scaled using `StandardScaler` to ensure that numerical features are on a similar scale for model training.
 
-### 2. **Handling Class Imbalance**
+###  **Handling Class Imbalance**
 - After evaluating the model performance on the initial data, it was determined that the dataset suffers from class imbalance.
 - **SMOTE** (Synthetic Minority Over-sampling Technique) was applied to balance the classes in the training data.
 - **Class weights** were also applied in models like Logistic Regression and Random Forest to handle the imbalance.
-
-### 3. **Modeling**
+----
+##  **Modeling**
 
 Two classification models were used:
 - **Logistic Regression**: A baseline model for comparison.
@@ -57,7 +90,7 @@ Two classification models were used:
 - **Grid Search** was used to find the optimal hyperparameters for the Random Forest model.
 - We tuned the number of trees (`n_estimators`) and the maximum depth (`max_depth`) of the trees.
 
-### 4. **Model Evaluation**
+###  **Model Evaluation**
 
 After training the models, we evaluated them using several metrics:
 - **Accuracy**: Overall classification accuracy.
@@ -65,6 +98,10 @@ After training the models, we evaluated them using several metrics:
 - **ROC-AUC Score**: Evaluates the model's ability to distinguish between the two classes.
 - **Confusion Matrix**: To visualize the true positive, false positive, true negative, and false negative predictions.
 
-Visualizations such as the **Confusion Matrix** and **Feature Importance** (for Random Forest) were also generated to provide deeper insights into model performance.
-
+-Visualizations such as the **Confusion Matrix**  (for Random Forest) were also generated to provide deeper insights into model performance.
+-
+##  Recommendations
+- Focus on at-risk customers identified by the Random Forest model.
+- Improve customer engagement by addressing common churn reasons.
+- Continuously monitor and refine the model with updated data.
 
